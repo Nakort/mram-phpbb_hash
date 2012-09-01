@@ -66,5 +66,6 @@ module Mram
 
   module Exception
     class WrongHashTypeError < StandardError; end
+    class WtfError < StandardError; end
   end
 end

@@ -8,13 +8,13 @@ Usage
 
 just include mram-phpbb\_hash in your Gemfile, and use it like this:
 
-> inputpass = params[:password] # from post variables, for example
-> phpbbhash = get\_hash\_from\_phpbb\_database(params[:user]) # whatever you need to do to get the hash from the database
-> if Mram::PhpbbHash.check\_hash(inputpass, phpbbhash) then
->   puts "success!"
-> else
->   puts "hash does not match!"
-> end
+    inputpass = params[:password] # from post variables, for example
+    phpbbhash = get\_hash\_from\_phpbb\_database(params[:user]) # whatever you need to do to get the hash from the database
+    if Mram::PhpbbHash.check\_hash(inputpass, phpbbhash) then
+      puts "success!"
+    else
+      puts "hash does not match!"
+    end
 
 Other Info
 ==========
